@@ -1,20 +1,16 @@
 package com.xiaobai.designpattern.mementopattern;
 
 /**
- * TODO
+ * 备忘录
  *
  * @author 小白
  * @date 2019/8/5
  */
-public class Originator {
+public class Memento {
     private String state = "";
 
-    public Memento createMemento() {
-        return new Memento(state);
-    }
-
-    public void restoreMemento(Memento memento) {
-        setState(memento.getState());
+    public Memento(String state) {
+        this.state = state;
     }
 
     public void setState(String state) {
